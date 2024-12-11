@@ -156,7 +156,7 @@ export default function PortfolioView() {
                         <div className="frontend">
                             Next.js
                         </div>
-                        <div className="frontend" style={{gridColumn: "span 2 / span 2"}}>
+                        <div className="frontend">
                             Tailwind CSS
                         </div>
                         <div className="frontend">
@@ -176,6 +176,9 @@ export default function PortfolioView() {
                         </div>
                         <div className="backend">
                             Prisma
+                        </div>
+                        <div className="backend">
+                            JWT
                         </div>
                     </div>
                 </div>
