@@ -4,7 +4,7 @@ import VercelLogo from "../../../assets/vercel.png";
 import Link from "next/link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faArrowUpRightFromSquare, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare, faDownload, faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
 import "./style.css";
 
 export default function PortfolioView() {
@@ -39,7 +39,7 @@ export default function PortfolioView() {
                 </Link>
             </div>
             <div className="mt-4 w-full border-b border-zinc-500 dark:border-zinc-200" id="h-line1" />
-            <div className="flex flex-row gap-4 mx-auto dark:invert *:border *:border-black *:bg-[#cccccc] *:shadow-sm *:shadow-slate-400 text-black
+            <div className="flex flex-row flex-wrap gap-4 place-content-center dark:invert *:border *:border-black *:bg-[#cccccc] *:shadow-sm *:shadow-slate-400 text-black
                 *:px-3 *:py-2 *:rounded-md"
                 id="links"
             >
@@ -72,6 +72,30 @@ export default function PortfolioView() {
                         <span className="hidden sm:inline">juliangenesiusmuljadi@gmail.com</span>
                     </div>
                 </Link>
+                {/* <Link href="/downloads/resume.pdf" target="_blank"
+                    className="hover:bg-[#a9a9a9] active:bg-[#909090] flex flex-row gap-2 cursor-pointer *:m-auto">
+                    <FontAwesomeIcon icon={faFile} aria-hidden
+                        className="size-5 text-black"
+                    />
+                    <div>
+                        <span>Resume</span>
+                    </div>
+                    <FontAwesomeIcon icon={faDownload} aria-hidden
+                        className="size-5 text-black"    
+                    />
+                </Link>
+                <Link href="/downloads/stock.jpg" download target="_blank"
+                    className="hover:bg-[#a9a9a9] active:bg-[#909090] flex flex-row gap-2 cursor-pointer *:m-auto">
+                    <FontAwesomeIcon icon={faFile} aria-hidden
+                        className="size-5 text-black"
+                    />
+                    <div>
+                        <span>Stock example</span>
+                    </div>
+                    <FontAwesomeIcon icon={faDownload} aria-hidden
+                        className="size-5 text-black"    
+                    />
+                </Link> */}
             </div>
             <div className="flex flex-col gap-2">
                 <div className="text-2xl font-semibold text-center mt-4 mb-1">
@@ -120,7 +144,7 @@ export default function PortfolioView() {
                     <Link href="https://github.com/Genesius-Julian-Muljadi/finpro-nextjs-express-prisma" target="_blank"
                         className="hover:bg-[#a9a9a9] active:bg-[#909090] flex flex-row gap-2 cursor-pointer *:m-auto">
                         <FontAwesomeIcon icon={faGithub} aria-hidden
-                            className="size-5 text-black"    
+                            className="size-5 text-black"
                         />
                         <div>
                             Github
