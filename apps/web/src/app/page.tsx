@@ -1,5 +1,5 @@
-import HomeView from "@/components/home";
-import PortfolioPage from "@/components/portfolio";
+import HomeView from "@/views/home";
+import PortfolioPage from "@/views/portfolio";
 import PortfolioLayout from "@/layouts/PortfolioLayout";
 
 export default function Home() {

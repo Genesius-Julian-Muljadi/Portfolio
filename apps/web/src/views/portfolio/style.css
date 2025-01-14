@@ -7,14 +7,14 @@
     padding-left: 0.75rem;
     padding-right: 0.75rem;
     text-align: center;
-    color: rgb(107, 145, 175);
-    font-family:'Times New Roman', Times, serif;
+    color: #6b91af;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
 }
 
 .frontend {
     border-width: 1px;
-    border-color: rgb(159, 134, 186);
+    border-color: #9f86ba;
     border-radius: 0.375rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -27,7 +27,7 @@
 
 .backend {
     border-width: 1px;
-    border-color: rgb(64, 138, 110);
+    border-color: #408a6e;
     border-radius: 0.375rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -41,19 +41,19 @@
 
 @media (prefers-color-scheme: dark) {
     .frontend {
-        border-color: rgb(216 180 254);
+        border-color: #d8b4fe;
         color: #d8b4fe;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     .backend {
-        border-color: rgb(112, 236, 189);
+        border-color: #70ecbd;
         color: #70ecbd;
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
     .language {
         border-color: rgb(154, 205, 247);
-        color: rgb(154, 205, 247);
+        color: #9acdf7;
     }
 }

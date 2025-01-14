@@ -10,7 +10,7 @@ import {
   faEnvelope,
   faFile,
 } from "@fortawesome/free-solid-svg-icons";
-import "./style.css";
+// import "./style.css";
 import projectLinks from "@/data/projectLinks";
 import { backendTools, frontendTools } from "@/data/tools";
 import { languages } from "@/data/languages";
@@ -176,7 +176,10 @@ export default function PortfolioPage() {
           <div className="text-lg font-semibold">Languages</div>
           <div className="grid grid-cols-2 grid-rows-2 gap-4">
             {languages.map((language, index) => (
-              <div key={`language=${index}-${language}`} className="language">
+              <div
+                key={`language=${index}-${language}`}
+                className="border border-[#6b91af] dark:border-[#9acdf7] rounded-md py-2 px-3 text-center font-semibold font-custom3 text-[#6b91af] dark:text-[#9acdf7]"
+              >
                 {language}
               </div>
             ))}
@@ -184,17 +187,27 @@ export default function PortfolioPage() {
         </div>
         <div className="flex flex-col gap-2" id="tools">
           <p className="text-lg font-semibold">
-            Tools: <span className="text-[#d8b4fe]">Front-end</span>/
-            <span className="text-[#70ecbd]">Back-end</span>
+            Tools:{" "}
+            <span className="text-[#9f86ba] dark:text-[#d8b4fe]">
+              Front-end
+            </span>
+            /
+            <span className="text-[#408a6e] dark:text-[#70ecbd]">Back-end</span>
           </p>
           <div className="grid grid-cols-3 grid-rows-3 gap-4">
             {frontendTools.map((toolName, index) => (
-              <div key={`frontend-${index}-${toolName}`} className="frontend">
+              <div
+                key={`frontend-${index}-${toolName}`}
+                className="border border-[#9f86ba] dark:border-[#d8b4fe] rounded-md py-2 px-3 text-center text-[#9f86ba] dark:text-[#d8b4fe] font-custom2 dark:font-custom1"
+              >
                 {toolName}
               </div>
             ))}
             {backendTools.map((toolName, index) => (
-              <div key={`backend-${index}-${toolName}`} className="backend">
+              <div
+                key={`backend-${index}-${toolName}`}
+                className="border border-[#408a6e] text-[#408a6e] dark:border-[#70ecbd] dark:text-[#70ecbd] rounded-md py-2 px-3 text-center font-semibold font-custom1 dark:font-custom2"
+              >
                 {toolName}
               </div>
             ))}
